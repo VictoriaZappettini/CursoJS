@@ -14,11 +14,12 @@ resultado= total/cantidad;
 document.write("<br>");
 document.write("Las notas ingresadas fueron:");
 document.write("<br>");
-notas.sort();
-for(let i = 0;i < cantidad ;i++){
+document.write(notas.join(' '));
+//notas.sort();
+/*for(let i = 0;i < cantidad ;i++){
     document.write(notas[i]);
     document.write("<br>");
-}
+} */
 
 
 document.write("<br>");
