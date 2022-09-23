@@ -35,6 +35,7 @@ function recibirNotas (){
 
 
 
+
 let nombre = prompt ("Nombre del alumno");
 let apellido= prompt ("Apellido del alumno");
 let cantidad = parseInt( prompt("En cuantas notas se divide la nota final? "));
@@ -49,5 +50,10 @@ const promedio = document.getElementById('promedio');
 promedio.innerHTML = `<p>El promedio final es : ${resultado} </p>`
 
 
-
-
+const btn2= document.getElementById('btn2');
+btn2.onclick = () =>{
+    if( resultado >= 6 ){
+        alert("pasaste el trimestre!")
+    }else{ alert ("no pasaste el trimestre!");
+} 
+}
