@@ -1,0 +1,23 @@
+
+.fondo p {
+    font-weight: bold;
+}
+
+.colorBoton {
+    background-color: aliceblue;
+}
+
+.fondoNavbar {
+    background-color: #E9967A;
+}
+
+.tamLogo {
+    width: 100px;
+}
+
+.resultado {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
