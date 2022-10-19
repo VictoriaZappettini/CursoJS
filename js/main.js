@@ -53,3 +53,18 @@ const mostrarInfo = (alumno) =>{
      Swal.fire(aux)
 }
 
+const listado = document.getElementById("listado");
+
+const listadoAlumnos = "json/alumnos.json";
+
+fetch(listadoAlumnos)
+    .then(respuesta => respuesta.json())
+    .then(datos => {
+        datos.forEach( alumno => {
+            listado.innerHTML += `<h5>Alumno: ${alumno.name} 
+                                     ${alumno.lastname} </h5>
+                            `
+        })
+    })
+    .catch(error => console.log(error))
+    .finally(() => console.log("Proceso Finalizado"));
